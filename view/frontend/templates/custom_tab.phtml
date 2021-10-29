@@ -1,0 +1,16 @@
+<h4>Tab moduł</h4>
+<?php
+
+// get current product data
+$product = $block->getProduct();
+
+// get Product name
+echo $product->getName();
+
+// get product description
+echo $product->getDescription();
+
+// Get custom product attribute value, change ‘custom_product_attribute’ with your ‘product attribute code’
+echo $product->getData('custom_product_attribute');
+
+?>
